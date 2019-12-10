@@ -25,3 +25,6 @@ USE `webDevelopment`;
 ALTER TABLE `languages` MODIFY `versions` VARCHAR(10);
 
 -- exercice 5
+USE `webDevelopment`;
+ALTER TABLE `CLIENTS` MODIFY `phone` varchar(10);
+ALTER TABLE `CLIENTS` CHANGE `phone` `phoneNumber` INTEGER(10);

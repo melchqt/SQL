@@ -6,23 +6,24 @@
 USE `webDevelopment`;
 CREATE TABLE `languages`
 (
-    `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
     `language` VARCHAR(100)
 );
 
     -- exercice 2
+    --
     USE `webDevelopment`;
     CREATE TABLE `tools`
     (
-        `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        `tools` VARCHAR(100)
+      `id` INT PRIMARY KEY AUTO_INCREMENT,
+      `tools` VARCHAR(100)
     );
 
  -- exercice 3
  USE `webDevelopment`;
  CREATE TABLE IF NOT EXISTS `frameworks`
  (
-     `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+     `id` INT PRIMARY KEY AUTO_INCREMENT,
      `name` VARCHAR(100)
  );
 
@@ -34,11 +35,11 @@ CREATE TABLE `languages`
  USE `webDevelopment`;
 CREATE TABLE `clients`
 (
-    id INT PRIMARY KEY,
-    lastname VARCHAR(50),
-    firstname VARCHAR(50),
-    birthdate DATE,
-    address VARCHAR(100),
-    phone INT,
-    mail VARCHAR (150)
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `lastname` VARCHAR(50),
+    `firstname` VARCHAR(50),
+    `birthdate` DATE,
+    `adress` VARCHAR(100),
+    `phone` INT,
+    `mail` VARCHAR(150)
 )
